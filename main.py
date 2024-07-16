@@ -2,14 +2,13 @@ import flask
 from flask import Flask, render_template, redirect, url_for, request
 
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, Text, Float
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, validators, URLField, DateField, FloatField
 from wtforms.validators import DataRequired
 import datetime as dt
 
-# WEEKS = 2
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'abcdefghijklmnop'
 
@@ -18,22 +17,33 @@ class Base(DeclarativeBase):
     pass
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database2.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database3.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
 
 class Item(db.Model):
+    __tablename__ = "items"
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     name: Mapped[str] = mapped_column(String(250), unique=True, nullable=False)
-    price: Mapped[float] = mapped_column(Float, nullable=False)
+    price: Mapped[float] = mapped_column(Float, nullable=True)
     average: Mapped[float] = mapped_column(Float, nullable=False)
-    location: Mapped[str] = mapped_column(String(250), nullable=False)
+    location: Mapped[str] = mapped_column(String(250), nullable=True)
     on_hand: Mapped[float] = mapped_column(Float, nullable=True)
     needed: Mapped[float] = mapped_column(Float, nullable=True)
     last_counted: Mapped[str] = mapped_column(String(250), nullable=True)
-    group: Mapped[str] = mapped_column(String(250), nullable=True)
     unit : Mapped[str] = mapped_column(String(250), nullable = True)
+    sort: Mapped[str] = mapped_column(String(250), nullable=True)
+    group_id: Mapped[int] = mapped_column(Integer, db.ForeignKey("groups.id"))
+    # Create reference to the User object. The "posts" refers to the posts property in the User class.
+    group = relationship("Group", back_populates="items")
+
+class Group(db.Model):
+    __tablename__ = "groups"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    name: Mapped[str] = mapped_column(String(250), unique=True, nullable=False)
+    weeks: Mapped[float] = mapped_column(Float, nullable=False)
+    items = relationship("Item", back_populates="group")
 
 with app.app_context():
     db.create_all()
