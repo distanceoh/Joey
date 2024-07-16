@@ -1,0 +1,55 @@
+{% extends 'header.html'%}
+{% block content %}
+<body>
+    <h2 style = text-align:center>Items to order</h2>
+    <h3 style = text-align:center>{{GROUP}}</h3>
+<div class = "container">
+    <table class="table mx-5">
+    <thead class = "sticky-top opacity-100" style = background:#C8DCFF>
+    <tr>
+        <th scope="col">Item Name</th>
+        <th scope = "col">Average</th>
+        <th scope = "col">Implied Average</th>
+        <th scope="col">{{WEEKS}} weeks</th>
+
+
+    </tr>
+    </thead >
+
+    <tbody>
+    {% for item in items %}
+    {% if item.average != 0%}
+    {%set remaining = item.on_hand / item.average%}
+    {% else %}
+    {%set remaining = 99%}
+    {% endif %}
+    <tr>
+<!--        <th scope="row">1</th>-->
+        {% if remaining <= 1 %}
+        <td style = "color:red">{{item.name}}</td>
+        {% elif remaining <= 1.5 %}
+            <td style = "color:blue">{{item.name}}</td>
+        {% else %}
+        <td style = "color:green">{{item.name}}</td>
+        {% endif %}
+
+
+
+<td>{{item.average}}</td>
+
+{% if GROUP == 'Flavor' %}
+
+<td>{{(item.average*2) - item.on_hand}}</td>
+{% else %}
+<td>{{(item.average - item.on_hand)}}</td>
+{% endif %}
+
+        <td>{{item.needed}}</td>
+
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table></div>
+</body>
+{% endblock %}

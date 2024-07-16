@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Joe's</title>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+            href="{{ url_for('static', filename='css/styles.css') }}"
+            rel="stylesheet"
+    />
+</head>
+<body style="background:orange">
+<header class="masthead" style="background-image: url('../static/assets/img/chickensandwich.jpg'); color: #C8DCFF
+
+">Nova Joe's</header>
+
+<div class="container mx-auto mt-5">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item mx-5"><a href="{{url_for('home')}}" class="nav-link active" aria-current="page">Home</a></li>
+            <a href="{{url_for('syrup_count', WEEKS = 2,)}}" class="nav-link active" style="margin-right: 50px;">Count Syrup</a>
+            <li class="nav-item"><a href="{{url_for('dry_count', WEEKS = 1,)}}" class="nav-link active" style="margin-right: 50px;">Count Dry Goods</a></li>
+            <li class="nav-item"><a href="{{url_for('sysco', WEEKS = 1,)}}" class="nav-link active">Sysco Order</a></li>
+        </ul>
+
+    </header>
+</div>
+{% block content %}
+{% endblock %}
+
+
+<footer style = "background:#C8DCFF">
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="{{url_for('home')}}" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item mx-5"><a href="{{url_for('syrup_count', WEEKS = WEEKS)}}" class="nav-link px-2 text-body-secondary">Count Syrup</a></li>
+                <li class="nav-item ml-5"><a href="{{url_for('syrup_count', WEEKS = WEEKS)}}" class="nav-link active mx-2">Count Dry Goods</a></li>
+            </ul>
+            <div class = "container" style = "text-align:center">
+            <img src = "https://novajoes.com/images/logo/no-border.png">
+            </div>
+            <p class="text-center text-body-secondary">© 2024 Nova Joe's</p>
+        </footer>
+    </div>
+</footer>
+</html>
