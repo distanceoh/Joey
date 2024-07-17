@@ -37,12 +37,11 @@
 
 <td>{{item.average}}</td>
 
-{% if GROUP == 'Flavor' %}
 
-<td>{{(item.average*2) - item.on_hand}}</td>
-{% else %}
-<td>{{(item.average - item.on_hand)}}</td>
-{% endif %}
+
+
+<td>{{(item.average*item.group.weeks - item.on_hand)}}</td>
+
 
         <td>{{item.needed}}</td>
 

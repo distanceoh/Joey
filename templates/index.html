@@ -1,44 +1,51 @@
 {% extends 'header.html' %}
 {% block content %}
 <body>
-    <h2 style = text-align:center>Welcome to Nova Joes, may I take your order?</h2>
-<div class = "container">
-    <table class="table">
-    <thead class = "sticky-top opacity-100" style = background:#C8DCFF>
-
-    <tr>
-        <th scope="col">Item Name</th>
-        <th scope="col">Average</th>
-        <th scope = "col">Unit</th>
-        <th scope="col">Location</th>
-        <th scope="col">Price</th>
-        <th scope ="col">Group</th>
-        <th scope = "col">Amount on hand</th>
-        <th scope = "col">Amount needed</th>
-        <th scope = "col">Last Counted</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    {% for item in items %}
-    <tr>
-<!--        <th scope="row">1</th>-->
-        <td><a href ="{{url_for('edit', item_id=item.id)}}">{{item.name}}</a></td>
-        <td>{{item.average}}</td>
-        <td>{{item.unit}}</td>
-        <td>{{item.location}}</td>
-        <td>{{item.price}}</td>
-        <td>{{item.group}}</td>
-        <td>{{item.on_hand}}</td>
-        <td>{{item.needed}}</td>
-        <td>{{item.last_counted}}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+<!--<h2 style=text-align:center>Welcome to Nova Joes, may I take your order?</h2>-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm"><a href="{{url_for('home', GROUP = 'Flavor') }}">Filter by Flavor</a></div>
+        <div class = "col-sm"><a href="{{url_for('home', GROUP = 'Dry') }}">Filter by Dry</a></div>
+        <div class = "col-sm"><a href="{{url_for('home', GROUP = 'Sysco') }}">Filter by Sysco</a></div>
     </div>
-<div class = "container" style = "text-align:center">
-    <a href ="{{url_for('add')}}" style = "text-decoration:underline;font-weight:bold">Add An Item</a></div>
+</div>
+<div class="container">
+    <table class="table">
+        <thead class="sticky-top opacity-100" style=background:#C8DCFF>
+
+        <tr>
+            <th scope="col">Item Name</th>
+            <th scope="col">Average</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Location</th>
+            <th scope="col">Price</th>
+            <th scope="col">Group</th>
+            <th scope="col">Amount on hand</th>
+            <th scope="col">Amount needed</th>
+            <th scope="col">Last Counted</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for item in items %}
+        <tr>
+            <!--        <th scope="row">1</th>-->
+            <td><a href="{{url_for('edit', item_id=item.id)}}">{{item.name}}</a></td>
+            <td>{{item.average}}</td>
+            <td>{{item.unit}}</td>
+            <td>{{item.location}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.group.name}}</td>
+            <td>{{item.on_hand}}</td>
+            <td>{{item.needed}}</td>
+            <td>{{item.last_counted}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="container" style="text-align:center">
+    <a href="{{url_for('add')}}" style="text-decoration:underline;font-weight:bold">Add An Item</a></div>
 
 </body>
 

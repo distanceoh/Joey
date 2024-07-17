@@ -11,7 +11,9 @@
     />
 </head>
 <body style="background:orange">
-<header class="masthead" style="background-image: url('../static/assets/img/chickensandwich.jpg'); color: #C8DCFF
+<!--<header class="masthead" style="background-image: url('../static/assets/img/chickensandwich.jpg'); color: #C8DCFF-->
+<header class="masthead" style="background-image: url('https://biblestudymentor.com/wp-content/uploads/Blog-Images-2018/Coffee-With-God.png'); color: #C8DCFF
+
 
 ">Nova Joe's</header>
 
@@ -19,9 +21,9 @@
     <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
             <li class="nav-item mx-5"><a href="{{url_for('home')}}" class="nav-link active" aria-current="page">Home</a></li>
-            <a href="{{url_for('syrup_count', WEEKS = 2,)}}" class="nav-link active" style="margin-right: 50px;">Count Syrup</a>
-            <li class="nav-item"><a href="{{url_for('dry_count', WEEKS = 1,)}}" class="nav-link active" style="margin-right: 50px;">Count Dry Goods</a></li>
-            <li class="nav-item"><a href="{{url_for('sysco', WEEKS = 1,)}}" class="nav-link active">Sysco Order</a></li>
+            <a href="{{url_for('syrup_count', GROUP = 'Flavor',)}}" class="nav-link active" style="margin-right: 50px;">Count Syrup</a>
+            <li class="nav-item"><a href="{{url_for('syrup_count', GROUP = 'Dry')}}" class="nav-link active" style="margin-right: 50px;">Count Dry Goods</a></li>
+            <li class="nav-item"><a href="{{url_for('syrup_count', GROUP = 'Sysco')}}" class="nav-link active">Sysco Order</a></li>
         </ul>
 
     </header>
@@ -35,8 +37,9 @@
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="{{url_for('home')}}" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item mx-5"><a href="{{url_for('syrup_count', WEEKS = WEEKS)}}" class="nav-link px-2 text-body-secondary">Count Syrup</a></li>
-                <li class="nav-item ml-5"><a href="{{url_for('syrup_count', WEEKS = WEEKS)}}" class="nav-link active mx-2">Count Dry Goods</a></li>
+                <li class="nav-item mx-5"><a href="{{url_for('syrup_count', GROUP = 'Flavor')}}" class="nav-link px-2 text-body-secondary">Count Syrup</a></li>
+                <li class="nav-item ml-5"><a href="{{url_for('syrup_count', GROUP = 'Dry')}}" class="nav-link active mx-2">Count Dry Goods</a></li>
+                <li class="nav-item ml-5"><a href="{{url_for('syrup_count', GROUP = 'Sysco')}}" class="nav-link active mx-2">Count Sysco</a></li>
             </ul>
             <div class = "container" style = "text-align:center">
             <img src = "https://novajoes.com/images/logo/no-border.png">
