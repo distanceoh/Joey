@@ -1,0 +1,40 @@
+id,name,price,average,location,on_hand,needed,last_counted,unit,sort,group_id
+1,Caramel Sauce,0.99,6.0,Webstaurant,0.0,,,bottle,sauce,1
+2,Chocolate Sauce,0.99,7.0,Webstaurant,0.0,,,bottle,sauce,1
+3,White Chocolate Sauce,0.99,18.0,Webstaurant,0.0,,,bottle,sauce,1
+4,Dark Chocolate,0.99,0.0,Webstaurant,0.0,,,bottle,sauce,1
+5,Apple,0.99,1.0,Webstaurant,0.0,,,bottle,syrup,1
+6,Blood Orange,0.99,2.5,Webstaurant,0.0,,,bottle,syrup,1
+7,Blue Raspberry,0.99,5.0,Webstaurant,0.0,,,bottle,syrup,1
+8,Brown Sugar Cinnamon,0.99,3.0,Webstaurant,0.0,,,bottle,syrup,1
+9,Caramel,0.99,20.0,Webstaurant,0.0,,,bottle,syrup,1
+10,Cherry,0.99,1.5,Webstaurant,0.0,,,bottle,syrup,1
+11,Chocolate Chip Cookie Dough,0.99,3.0,Webstaurant,0.0,,,bottle,syrup,1
+12,Chai,0.99,9.0,Webstaurant,0.0,,,bottle,other,1
+13,Coconut,0.99,4.0,Webstaurant,0.0,,,bottle,syrup,1
+14,Cupcake,0.99,1.5,Webstaurant,0.0,,,bottle,syrup,1
+15,Hazelnut,0.99,3.0,Webstaurant,0.0,,,bottle,syrup,1
+16,Peppermint,0.99,0.5,Webstaurant,0.0,,,bottle,syrup,1
+17,Pineapple,0.99,2.5,Webstaurant,0.0,,,bottle,syrup,1
+18,Pomegranate,0.99,3.0,Webstaurant,0.0,,,bottle,syrup,1
+19,Pumpkin Spice,0.99,0.0,Webstaurant,0.0,,,bottle,syrup,1
+20,Raspberry,0.99,3.5,Webstaurant,0.0,,,bottle,syrup,1
+21,Salted Caramel,0.99,7.0,Webstaurant,0.0,,,bottle,syrup,1
+22,Strawberry,0.99,6.0,Webstaurant,0.0,,,bottle,syrup,1
+23,Toasted Marshmallow,0.99,4.0,Webstaurant,0.0,,,bottle,syrup,1
+24,Vanilla,0.99,14.0,Webstaurant,0.0,,,bottle,syrup,1
+25,Vanilla Bean,0.99,0.0,Webstaurant,0.0,,,bottle,syrup,1
+26,Watermelon,0.99,2.5,Webstaurant,0.0,,,bottle,syrup,1
+27,Sugar Free Brown Sugar Cinnamon,0.99,1.25,Webstaurant,0.0,,,bottle,syrup,1
+28,Sugar Free Caramel,0.99,2.0,Webstaurant,0.0,,,bottle,syrup,1
+29,Sugar Free Hazelnut,0.99,1.0,Webstaurant,0.0,,,bottle,syrup,1
+30,Sugar Free S'mores,0.99,2.0,Webstaurant,0.0,,,bottle,syrup,1
+31,Sugar Free Vanilla,0.99,2.0,Webstaurant,0.0,,,bottle,syrup,1
+32,Sugar Free White Chocolate,0.99,1.25,Webstaurant,0.0,,,bottle,syrup,1
+33,Dome lid,0.99,1.0,Webstaurant,0.0,,,case,,3
+34,Flat Lid,0.99,2.5,Webstaurant,0.0,,,case,,3
+35,Blueberry Smoothie,0.99,2.5,Webstaurant,0.0,,,bottle,smoothie,1
+36,Mango Smoothie,0.99,2.0,Webstaurant,0.0,,,bottle,smoothie,1
+37,Peach Smoothie,0.99,1.5,Webstaurant,0.0,,,bottle,smoothie,1
+38,Strawberry Smoothie,0.99,2.0,Webstaurant,0.0,,,bottle,smoothie,1
+39,Strawnana Smoothie,0.99,3.0,Webstaurant,0.0,,,bottle,smoothie,1

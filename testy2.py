@@ -83,5 +83,5 @@ if __name__ == '__main__':
     data = data.to_dict(orient='records')
     # p.pprint(data)
     for row in data:
-        create_records(name=row['Name'], price=row['price'], location=row['location'], average=row['average'],
+        create_records(name=row['name'], price=row['price'], location=row['location'], average=row['average'],
                        on_hand=row['on_hand'], group=row['group'], unit=row['unit'], sort=row['sort'])
