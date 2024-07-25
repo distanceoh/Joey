@@ -74,6 +74,7 @@ def create_records(name, price, location, average, on_hand, group, unit, sort):
             pass
             # old_book.price = price
             # old_book.unit = unit
+            old_book.average = average
         print(new_book.name)
         db.session.commit()
 

@@ -1,40 +1,39 @@
-Name,average,location,price,on_hand,group,unit,sort
-Caramel Sauce,6,Webstaurant,0.99,0,Flavor,bottle,sauce
-Chocolate Sauce,7,Webstaurant,0.99,0,Flavor,bottle,sauce
-White Chocolate Sauce,18,Webstaurant,0.99,0,Flavor,bottle,sauce
+name,average,location,price,on_hand,group,unit,sort
+Caramel Sauce,6.25,Webstaurant,0.99,0,Flavor,bottle,sauce
+Chocolate Sauce,10,Webstaurant,0.99,0,Flavor,bottle,sauce
+White Chocolate Sauce,16.25,Webstaurant,0.99,0,Flavor,bottle,sauce
 Dark Chocolate,0,Webstaurant,0.99,0,Flavor,bottle,sauce
 Apple,1,Webstaurant,0.99,0,Flavor,bottle,syrup
 Blood Orange,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
-Blue Raspberry,5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Blue Raspberry,6.25,Webstaurant,0.99,0,Flavor,bottle,syrup
 Brown Sugar Cinnamon,3,Webstaurant,0.99,0,Flavor,bottle,syrup
-Caramel,20,Webstaurant,0.99,0,Flavor,bottle,syrup
-Cherry,1.5,Webstaurant,0.99,0,Flavor,bottle,syrup
-Chocolate Chip Cookie Dough,3,Webstaurant,0.99,0,Flavor,bottle,syrup
-Chai,9,Webstaurant,0.99,0,Flavor,bottle,other
-Coconut,4,Webstaurant,0.99,0,Flavor,bottle,syrup
-Cupcake,1.5,Webstaurant,0.99,0,Flavor,bottle,syrup
-Hazelnut,3,Webstaurant,0.99,0,Flavor,bottle,syrup
-Peppermint,0.5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Caramel,19,Webstaurant,0.99,0,Flavor,bottle,syrup
+Cherry,1.25,Webstaurant,0.99,0,Flavor,bottle,syrup
+Chocolate Chip Cookie Dough,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Chai,14,Webstaurant,0.99,0,Flavor,bottle,other
+Coconut,6.25,Webstaurant,0.99,0,Flavor,bottle,syrup
+Cupcake,1.25,Webstaurant,0.99,0,Flavor,bottle,syrup
+Hazelnut,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Peppermint,1,Webstaurant,0.99,0,Flavor,bottle,syrup
 Pineapple,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
-Pomegranate,3,Webstaurant,0.99,0,Flavor,bottle,syrup
+Pomegranate,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
 Pumpkin Spice,0,Webstaurant,0.99,0,Flavor,bottle,syrup
-Raspberry,3.5,Webstaurant,0.99,0,Flavor,bottle,syrup
-Salted Caramel,7,Webstaurant,0.99,0,Flavor,bottle,syrup
-Strawberry,6,Webstaurant,0.99,0,Flavor,bottle,syrup
-Toasted Marshmallow,4,Webstaurant,0.99,0,Flavor,bottle,syrup
-Vanilla,14,Webstaurant,0.99,0,Flavor,bottle,syrup
-Vanilla Bean,0,Webstaurant,0.99,0,Flavor,bottle,syrup
+Raspberry,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Salted Caramel,5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Strawberry,7,Webstaurant,0.99,0,Flavor,bottle,syrup
+Toasted Marshmallow,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
+Vanilla,15,Webstaurant,0.99,0,Flavor,bottle,syrup
 Watermelon,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
-Sugar Free Brown Sugar Cinnamon,1.25,Webstaurant,0.99,0,Flavor,bottle,syrup
-Sugar Free Caramel,2,Webstaurant,0.99,0,Flavor,bottle,syrup
+Sugar Free Brown Sugar Cinnamon,1,Webstaurant,0.99,0,Flavor,bottle,syrup
+Sugar Free Caramel,2.5,Webstaurant,0.99,0,Flavor,bottle,syrup
 Sugar Free Hazelnut,1,Webstaurant,0.99,0,Flavor,bottle,syrup
-Sugar Free S'mores,2,Webstaurant,0.99,0,Flavor,bottle,syrup
-Sugar Free Vanilla,2,Webstaurant,0.99,0,Flavor,bottle,syrup
+Sugar Free S'mores,1.25,Webstaurant,0.99,0,Flavor,bottle,syrup
+Sugar Free Vanilla,1.25,Webstaurant,0.99,0,Flavor,bottle,syrup
 Sugar Free White Chocolate,1.25,Webstaurant,0.99,0,Flavor,bottle,syrup
 Dome lid,1,Webstaurant,0.99,0,Dry,case,
 Flat Lid,2.5,Webstaurant,0.99,0,Dry,case,
-Blueberry Smoothie,2.5,Webstaurant,0.99,0,Flavor,bottle,smoothie
-Mango Smoothie,2,Webstaurant,0.99,0,Flavor,bottle,smoothie
-Peach Smoothie,1.5,Webstaurant,0.99,0,Flavor,bottle,smoothie
-Strawberry Smoothie,2,Webstaurant,0.99,0,Flavor,bottle,smoothie
-Strawnana Smoothie,3,Webstaurant,0.99,0,Flavor,bottle,smoothie
+Blueberry Smoothie,3.75,Webstaurant,0.99,0,Flavor,bottle,smoothie
+Mango Smoothie,2.5,Webstaurant,0.99,0,Flavor,bottle,smoothie
+Peach Smoothie,1.25,Webstaurant,0.99,0,Flavor,bottle,smoothie
+Strawberry Smoothie,3.75,Webstaurant,0.99,0,Flavor,bottle,smoothie
+Strawnana Smoothie,6.5,Webstaurant,0.99,0,Flavor,bottle,smoothie
