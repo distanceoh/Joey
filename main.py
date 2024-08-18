@@ -178,7 +178,10 @@ def order():
 
         print(group.name, "lujah")
         items = db.session.execute(
-            db.select(Item).order_by(Item.name)).scalars().all()
+            db.select(Item).order_by(Item.name)).scalars().all().orger_by(Item.sort))
+
+        # result = db.session.execute(db.select(Item).order_by(Item.sort))
+        
         items2 = [item for item in items if item.group.name == request.args['GROUP']]
         for item in items2:
             item.needed = (item.average * item.group.weeks) - float(item.on_hand)
