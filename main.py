@@ -178,7 +178,7 @@ def order():
 
         print(group.name, "lujah")
         items = db.session.execute(
-            db.select(Item).order_by(Item.name)).scalars().all().orger_by(Item.sort))
+            db.select(Item).order_by(Item.name)).scalars().all().orger_by(Item.sort)
 
         # result = db.session.execute(db.select(Item).order_by(Item.sort))
         
