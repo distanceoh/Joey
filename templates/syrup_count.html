@@ -1,7 +1,7 @@
 {% extends 'header.html' %}
 {% block content %} <form action="{{url_for('process', GROUP = GROUP)}}", method = 'POST'>
 <div class = container>
-<table class="table">
+<table class="table" style = "max-width:75ch; position:relative; left:25%;">
     <thead>
     <tr>
         <th scope="col">Item Name</th>
@@ -15,9 +15,9 @@
     {% for item in items %}
     <tr>
 <!--        <th scope="row">1</th>-->
-        <td><label class = col-4 for='{{item.name}}'>{{item.name}} count({{item.average}} {{item.unit}}):</label></td>
-        <td><input class = col-4 type="text" id="{{item.name}}" name="{{item.name}}" value="0" required></td>
-        <td><p class = 'col-4'></p></td>
+        <td><label class = col-6 for='{{item.name}}'>{{item.name}} count({{item.average}} {{item.unit}}):</label></td>
+        <td><input class = col-6 type="text" id="{{item.name}}" name="{{item.name}}" value="0" required></td>
+        <!--<td><p class = 'col-4'></p></td>-->
 
 
     </tr>
@@ -25,7 +25,7 @@
 
     </tbody>
 
-</table>    <input type="submit" value="Submit">
+</table>    <input type="submit" value="Submit" style = "position:relative; left:45%">
 </div>
     </form>
 
